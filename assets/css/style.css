@@ -826,8 +826,17 @@ body {
   margin-bottom: 20px;
 }
 
+.form-row.confirm {
+  margin-bottom: 10px;
+  gap: 8px;
+  flex-direction: row;
+}
+
 @media (min-width: 768px) {
   .form-row {
+    flex-direction: row;
+  }
+  .form-row.confirm {
     flex-direction: row;
   }
 }
