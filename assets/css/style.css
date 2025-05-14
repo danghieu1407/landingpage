@@ -44,6 +44,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 400px) {
+  .menu {
+    display: block;
+  }
+}
+
 .menu-item {
   font-size: 22px;
   padding: 10px;
@@ -260,6 +266,17 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.download-option-google {
+  width: 200px
+}
+
+
+.download-option-apple {
+  width: 200px
+}
+
+
 
 @media (min-width: 1050px) {
   .download-options {
@@ -669,6 +686,13 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .testimonial-title {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
 .testimonial-image img {
   width: 100%;
   height: auto;
@@ -729,6 +753,7 @@ body {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.4;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -823,8 +848,12 @@ body {
 }
 
 .info-item img {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
+}
+
+.info-item img[alt="Email"] {
+  padding: 3px;
 }
 
 .info-item p {
