@@ -49,12 +49,28 @@ body {
   padding: 10px;
   cursor: pointer;
 }
+.menu-item:hover {
+  color: #1978ef;
+}
+
+.menu-item span:hover {
+  color: #1978ef;
+}
 
 .menu-item.cta {
   background-color: #1978ef;
   color: white;
   border-radius: 5px;
   padding: 10px 15px;
+}
+
+.menu-item.lang:hover{
+  color: black;
+
+}
+
+.menu-item.cta:hover {
+  background-color: #0b56bc;
 }
 
 .active {
@@ -109,7 +125,6 @@ body {
 .hero-text {
   font-size: 22px;
   line-height: 1.4;
-  text-align: justify;
 }
 
 /* World and Voice Section Combined */
@@ -231,7 +246,6 @@ body {
 .description p {
   font-size: 22px;
   line-height: 1.4;
-  text-align: justify;
 }
 
 .download {
@@ -395,7 +409,6 @@ body {
   flex-direction: column;
   margin-bottom: 40px;
   border-radius: 55px;
-  padding: 30px;
   text-align: left;
 }
 
@@ -422,9 +435,7 @@ body {
 
 .feature-content {
   flex: 1;
-  padding-left: 50px;
   align-self: center;
-  margin-bottom: 100px;
 }
 
 
@@ -447,10 +458,23 @@ body {
   }
 }
 
+@media (min-width: 1025px ) {
+  .feature-content {
+    padding-left: 50px;
+  }
+
+}
+
+@media (max-width: 1025px ) {
+  .feature-card {
+    padding: 30px;
+  }
+}
+
+
 .feature-description {
   font-size: 22px;
   line-height: 1.4;
-  text-align: justify;
 }
 
 .feature-example {
@@ -458,7 +482,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
 }
 
 @media (min-width: 992px) {
@@ -470,7 +493,6 @@ body {
 .feature-example img {
   max-width: 100%;
   height: auto;
-  margin: 15px 0;
 }
 
 .example-title {
@@ -527,7 +549,6 @@ body {
 .about-content p {
   font-size: 22px;
   line-height: 1.4;
-  text-align: justify;
 }
 
 /* Values Section */
@@ -731,8 +752,6 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -1089,4 +1108,39 @@ body {
 .divider {
   border-top: 1px dashed #ccc;
   margin: 1.5rem 0;
+}
+
+.world-voice-section {
+  display: none;
+}
+@media (min-width: 460px) {
+  .world-voice-section {
+    display: flex;
+  }
+}
+
+@media (max-width: 460px) {
+  .description-download {
+    display: block;
+  }
+  .description-download .download {
+    margin-top: 20px;
+    padding-left: 40px;
+  }
+  .feature-example.post {
+    display: none;
+  }
+}
+
+.quote-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden; /* Prevents content from spilling out */
+}
+
+.quote-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
